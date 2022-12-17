@@ -1,5 +1,5 @@
 import {createContext, useState} from "react";
-const LanguageContext = createContext(null);
+const LanguageTextContext = createContext(null);
 
 function Provider({children}){
     const [text, setText] = useState('');
@@ -11,9 +11,9 @@ function Provider({children}){
         setText
     }
     
-    return <LanguageContext.Provider value={valueToShare}>
+    return <LanguageTextContext.Provider value={valueToShare}>
         {children}
-        </LanguageContext.Provider>
+        </LanguageTextContext.Provider>
 }
 export { Provider };
-export default LanguageContext;
+export default LanguageTextContext;

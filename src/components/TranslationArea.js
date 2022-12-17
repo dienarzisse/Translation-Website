@@ -1,9 +1,9 @@
 import {useContext} from "react";
-import LanguageContext from "../contexts/language";
+import LanguageTextContext from "../contexts/languageText";
 import "./css/TranslationArea.css"
 function TranslationArea({ handleTranslation, setTranslatedText }){
-    const {text, setText} = useContext(LanguageContext);
-    const {selectedLanguage} = useContext(LanguageContext);
+    const {text, setText} = useContext(LanguageTextContext);
+    const {selectedLanguage} = useContext(LanguageTextContext);
 
     function handleChange(event){
         const newText = event.target.value;

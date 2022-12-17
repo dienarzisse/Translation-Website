@@ -1,9 +1,9 @@
 import Language from "./Language";
 import { useContext } from "react";
-import LanguageContext from "../contexts/language";
+import LanguageTextContext from "../contexts/languageText";
 import "./css/LanguageList.css"
 function LanguagesList({ languages }){
-    const { setLanguage } = useContext(LanguageContext);
+    const { setLanguage } = useContext(LanguageTextContext);
     const showLangauges = languages.map((language) => {
         return <Language
         key={language.languageId}
