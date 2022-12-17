@@ -9,7 +9,8 @@ ul {
   width: 100%;
   margin-top: 1rem;
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  justify-content: space-between;
-  align-content: space-between;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  grid-template-rows: auto;
+  grid-gap: 0.25rem;
+  align-items: end;
 }/*# sourceMappingURL=LanguageList.css.map */

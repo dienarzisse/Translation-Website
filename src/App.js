@@ -42,16 +42,14 @@ function App() {
   };
 
   return (
-    <div className="body">
       <main className="App">
-      <div className="first-section-desktop">
-        <CharactersLimit />
-        <TranslationArea  handleTranslation={handleTranslation} setTranslatedText={setTranslatedText} />
-        <LanguagesList languages={languages} />
-     </div>
-     <TranslatedText translatedText={translatedText} />
+        <div className="first-section-desktop">
+          <CharactersLimit />
+          <TranslationArea  handleTranslation={handleTranslation} setTranslatedText={setTranslatedText} />
+          <LanguagesList languages={languages} />
+      </div>
+      <TranslatedText translatedText={translatedText} />
      </main>
-    </div>
   );
 }
 

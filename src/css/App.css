@@ -4,14 +4,21 @@
   box-sizing: border-box;
 }
 
-.body {
+html {
+  background-color: #082f53;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #082f53;
+}
+
+#root {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .App {
+  padding: 0 2rem;
   max-width: 375px;
   height: 100vh;
   display: flex;
@@ -31,8 +38,11 @@ form button {
 }
 
 @media screen and (min-width: 1000px) {
-  body {
+  #root {
     width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .App {
     min-width: 85%;
