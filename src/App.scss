@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #082f53;
+}
+
+.App{
+    max-width: 375px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    button{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    body{
+        width: 100vw;
+    }
+    .App{
+        min-width: 85%;
+        flex-direction: row;
+        align-items: center;
+    }
+    .first-section-desktop{
+        padding-right: 1rem;
+    }
+}

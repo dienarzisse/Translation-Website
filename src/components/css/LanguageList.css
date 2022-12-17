@@ -1,0 +1,15 @@
+.languageListWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  width: 100%;
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  justify-content: space-between;
+  align-content: space-between;
+}/*# sourceMappingURL=LanguageList.css.map */
